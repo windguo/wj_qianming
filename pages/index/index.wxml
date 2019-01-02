@@ -10,31 +10,24 @@
       </view>
     </swiper-item>
     <swiper-item>
-      <view class="swiper_item" style="background:#FF00FF;color:#ffff00;">
-        <navigator target="miniProgram" open-type="navigate" app-id="wxb2e976cef0f6facb" path="" extra-data="" version="release">
-          设计三个风格，如需视频加10元。
-        </navigator>
-      </view>
-    </swiper-item>
-    <swiper-item>
       <view class="swiper_item" style="background:#6495ED;color:#ffff00;" bindtap="goDesign">
       点击查看我们强筋有力的作品
       </view>
     </swiper-item>
     <swiper-item>
-      <view class="swiper_item" style="background:#1E90FF;color:#ffff00;">艺术字生成收录了6{{total}}个字体</view>
+      <view class="swiper_item" style="background:#1E90FF;color:#ffff00;">共收录了6{{total}}个字体</view>
     </swiper-item>
     <swiper-item>
       <view class="swiper_item" style="background:#FF00FF;color:#ffff00;font-size:40rpx;">
         <navigator target="miniProgram" open-type="navigate" app-id="wxb2e976cef0f6facb" path="" extra-data="" version="release">
-          找头像来 爱头像 ,可以浏览和设计头像哦
+          找头像来【爱头像】 ,可以浏览和设计头像哦
         </navigator>
       </view>
     </swiper-item>
     <swiper-item>
       <view class="swiper_item" style="background:#6495ED;color:#ffff00;font-size:50rpx;">
         <navigator target="miniProgram" open-type="navigate" app-id="wxa12f1b4e608253f8" path="" extra-data="" version="release">
-          找网名来 爱网名 ，总有一款适合你
+          找网名来【爱网名】 ，总有一款适合你
         </navigator>
       </view>
     </swiper-item>
