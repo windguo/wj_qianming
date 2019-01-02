@@ -6,7 +6,7 @@ swiper{height:140rpx;font-weight: 300}
 .tab-h{
     height: 100rpx;width: 100%; box-sizing: border-box;overflow: hidden;line-height: 100rpx;background: #efefef; font-size: 36rpx;font-weight: 300; white-space: nowrap;z-index: 99999;}
 .tab-item{display: inline-block;margin:0px 10rpx;padding:0 30rpx;}
-.tab-item.active{position: relative;background: #fff;color: #36c3c8}
+.tab-item.active{position: relative;background: #fff;color: #ff5d11}
 .scoll-h{height: 100%;}
 .previewImageStyle{overflow: hidden;}
 .searchBox{
@@ -50,7 +50,7 @@ swiper{height:140rpx;font-weight: 300}
   margin:0 40rpx;
 }
 .searchBox .stext {
-  border:1px solid #36c3c8;
+  border:1px solid #ff5d11;
   background:#fffff0;
   border-radius: 20rpx;
   padding:20rpx 40rpx;
@@ -58,10 +58,10 @@ swiper{height:140rpx;font-weight: 300}
   -webkit-box-shadow:8rpx 8rpx 8rpx #e2e2e2 inset;
 }
 .place-holder{
-  color: #36c3c8
+  color: #ff5d11
 }
 .sbutton{
-  background:#36c3c8;
+  background:#ff5d11;
   color: #fff;
   font-size:40rpx;
   border-radius: 30rpx;

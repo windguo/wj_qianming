@@ -32,7 +32,7 @@ Page({
       wx.showModal({
         content: '请输入您的姓名',
         showCancel:false,
-        confirmColor:'#36c3c8'
+        confirmColor:'#ff5d11'
       })
       setTimeout(function () {
         wx.hideToast()
@@ -186,7 +186,7 @@ Page({
           objectArray: json.data.result
         });
         this.setData({
-          previewImage: 'https://www.yishuzi.com.cn/e/api/creat/get.php?getJson=showPic&font=' + this.data.objectArray[0].id + '&text=' + _text +'&fontSize=28&width=250&height=60&fontColor=36c3c8'
+          previewImage: 'https://www.yishuzi.com.cn/e/api/creat/get.php?getJson=showPic&font=' + this.data.objectArray[0].id + '&text=' + _text +'&fontSize=28&width=250&height=60&fontColor=ff5d11'
         });
         wx.hideLoading();
       }
@@ -488,7 +488,7 @@ Page({
         name: '深青色',
       },
       {
-        color: '#36c3c8',
+        color: '#ff5d11',
         name: '水鸭色',
       },
       {
@@ -851,7 +851,7 @@ Page({
         name: '深青色',
       },
       {
-        backgroundColor: '#36c3c8',
+        backgroundColor: '#ff5d11',
         name: '水鸭色',
       },
       {
@@ -1375,7 +1375,7 @@ Page({
       _txt = '艺术字生成';
     }
     this.setData({
-      previewImage: 'https://www.yishuzi.com.cn/e/api/creat/get.php?getJson=showPic&font=' + this.data.objectArray[e.detail.value].id + '&text=' + _txt +'&fontSize=28&width=250&height=60&fontColor=36c3c8',
+      previewImage: 'https://www.yishuzi.com.cn/e/api/creat/get.php?getJson=showPic&font=' + this.data.objectArray[e.detail.value].id + '&text=' + _txt +'&fontSize=28&width=250&height=60&fontColor=ff5d11',
       index: e.detail.value
     });
     console.log('previewImagepreviewImage', this.data.previewImage);

@@ -7,9 +7,9 @@
 	],
 	"window": {
 		"backgroundTextStyle": "light",
-		"navigationBarBackgroundColor": "#36c3c8",
+		"navigationBarBackgroundColor": "#fff",
 		"navigationBarTitleText": "手写签名设计",
-		"navigationBarTextStyle": "white"
+		"navigationBarTextStyle": "black"
 	},
 	"navigateToMiniProgramAppIdList": [
 		"wxb2e976cef0f6facb",
@@ -20,7 +20,7 @@
 	],
 	"tabBar": {
 		"color": "#8a8a8a",
-		"selectedColor": "#36c3c8",
+		"selectedColor": "#ff5d11",
 		"list": [
 			{
 				"pagePath": "pages/index/index",
