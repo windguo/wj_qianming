@@ -1,0 +1,61 @@
+Page{
+  background: #eee;
+}
+.searchBox{
+  line-height: 80rpx;
+  margin-top:30rpx;
+  padding:0 10rpx;
+}
+.buttonWrap{
+  padding-top:30rpx;
+}
+.searchBox .stext {
+  border:1px solid #c00;
+  background:#fff;
+  border-radius: 20rpx;
+  padding:18rpx;
+  margin-bottom:10rpx;
+}
+.alignCenter{
+  text-align: center;
+}
+.alignCenter button{
+  font-weight:300
+}
+.searchBox .sname{padding:20rpx 0;}
+.searchBox .sbutton{
+  margin-top: 20rpx;
+}
+.sharsStyle{
+  margin:20rpx auto;
+  text-align: center;
+  width:300px;
+  height:225px;
+}
+.btns{
+  margin:30rpx 0;
+}
+.tips{
+  background: #fffff0;
+  padding:50rpx;
+  margin-bottom:30rpx;
+  font-size: 40rpx;
+  color: brown;
+}
+
+.radar{
+    -webkit-animation: radar 0.5s linear infinite;
+    animation: radar 0.5s linear infinite;
+}
+
+@-webkit-keyframes radar{
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
+     }
+}

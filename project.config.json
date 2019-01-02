@@ -1,0 +1,79 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.3",
+	"appid": "wx61c437bbdea20c24",
+	"projectname": "%E6%AD%A6%E5%B0%86-%E6%89%8B%E5%86%99%E7%AD%BE%E5%90%8D%E8%AE%BE%E8%AE%A1",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 5,
+			"list": [
+				{
+					"id": 0,
+					"name": "result",
+					"pathName": "pages/result/result",
+					"query": "createdImg=https://www.yishuzi.com.cn/cache/xiaochengxu-20181228-15459680278951.png&width=400&height=200"
+				},
+				{
+					"id": -1,
+					"name": "wangming",
+					"pathName": "pages/wangming/wangming",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wangming——上标",
+					"pathName": "pages/wangming_shangbiao/wangming_shangbiao",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "about",
+					"pathName": "pages/about/about",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "chibang",
+					"pathName": "pages/chibang/chibang",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/design/design"
+				}
+			]
+		}
+	}
+}

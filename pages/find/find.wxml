@@ -1,0 +1,49 @@
+<view class="container">
+<navigator target="miniProgram" open-type="navigate" app-id="wxb2e976cef0f6facb" path="" extra-data="" version="release">
+    <view class="listViews">
+<image mode="widthFix" class="img" src="https://www.yishuzi.com.cn/e/api/xiaochengxu/aitouxiang.png" background-size="cover" />
+        <view class="text">
+            <h2>爱头像</h2>
+            <p>2019最新版头像,女生头像,非主流头像,个性头像,男生头像,情侣头像,卡通头像,欧美头像等,支持DIY</p>
+        </view>
+    </view>
+</navigator>
+<navigator target="miniProgram" open-type="navigate" app-id="wx4e64b51d8fa37436" path="" extra-data="" version="release">
+    <view class="listViews">
+<image mode="widthFix" class="img" src="https://www.yishuzi.com.cn/e/api/xiaochengxu/zhufu.jpg" background-size="cover" />
+    <view class="text">
+        <h2>爱祝福语</h2>
+        <p>这里有经典的日常生活中的祝福语，其中包括生日祝福语、结婚祝福语、各种中外节日、二十四节气祝福语，以及朋友之间的问候祝福短信、祝福的话语。祝福你我，分享快乐!</p>
+    </view>
+    </view>
+</navigator>
+<navigator target="miniProgram" open-type="navigate" app-id="wxa12f1b4e608253f8" path="" extra-data="" version="release">
+    <view class="listViews">
+<image mode="widthFix" class="img" src="https://www.yishuzi.com.cn/e/api/xiaochengxu/wangming.jpg" background-size="cover" />
+    <view class="text">
+        <h2>爱网名</h2>
+        <p>最具特色的精选网名，包括男生、女生、情侣、霸气网名等40种分类的网名供大家选择。</p>
+    </view>
+    </view>
+</navigator>
+<navigator target="miniProgram" open-type="navigate" app-id="wxa53e3cf622d861ad" path="" extra-data="" version="release">
+    <view class="listViews">
+        <image mode="widthFix" class="img" src="https://www.yishuzi.com.cn/e/api/xiaochengxu/aijuzi.jpg"
+            background-size="cover" />
+        <view class="text">
+            <h2>爱句子</h2>
+            <p>2019最新伤感的句子,唯美的句子,爱情句子,经典语录,经典句子,伤心的话,优美句子，情话,励志的句子,哲理句子,祝福的话,搞笑句子</p>
+        </view>
+    </view>
+</navigator>
+<navigator target="miniProgram" open-type="navigate" app-id="wx8041cab51c6ffcff" path="" extra-data="" version="release">
+    <view class="listViews">
+        <image mode="widthFix" class="img" src="https://www.yishuzi.com.cn/e/api/xiaochengxu/aibaoxiao.jpg"
+            background-size="cover" />
+        <view class="text">
+            <h2>爱爆笑</h2>
+            <p>各种笑话,有经典笑话,幽默笑话,爆笑笑话,冷笑话,笑话大全,短信笑话,开心每一天!</p>
+        </view>
+    </view>
+</navigator>
+</view>

@@ -1,0 +1,14 @@
+<view>
+    <view class="topad">
+        <h2>纯手写设计签名限时<span style="color:#ffffff;padding:0 10rpx">25</span>元一个</h2>
+        <h2>添加微信:<span style="color:#ffffff;padding:0 30rpx">275333</span>了解详情</h2>
+    </view>
+    <view class="h2title">
+        我们的签名设计作品
+    </view>
+    <view wx:for="{{objectArray}}" wx:for-index="i" wx:for-item="items">
+        <view style="border-top:2px solid #ebebeb" wx:if='{{objectArray[i].titlepic}}' class="previewImageStyle">
+            <image src='{{objectArray[i].titlepic}}' mode='center'></image>
+        </view>
+    </view>
+</view>

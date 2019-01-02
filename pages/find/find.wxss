@@ -1,0 +1,29 @@
+Page{background: #eee;}
+.container{
+    margin-top:30rpx;
+}
+.listViews{
+    margin:30rpx 50rpx 30rpx;
+    padding:50rpx;
+    display: flex;
+    justify-content:space-between;
+    background: #fff;
+    border-radius: 20rpx;
+}
+.listViews .img{
+    flex:1;
+    border-radius: 20rpx;
+}
+.listViews .text{
+    margin-left:20rpx;
+    flex:3
+}
+.listViews h2{
+    display: block;
+    padding-bottom:20rpx
+}
+.listViews p{
+    color: #666;
+    font-size:32rpx;
+    font-weight: 300
+}

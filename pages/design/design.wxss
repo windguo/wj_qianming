@@ -1,0 +1,3 @@
+.topad{text-align:center;font-size:50rpx;font-weight:300;padding:30rpx 0;line-height:70rpx;height:140rpx;background:#FF1493;color:#ffff00;}
+.topad h2{display: block;}
+.h2title{font-weight: 300;font-size: 50rpx;padding:30rpx 0;text-align: center;color: #FF1493;background: #ebebeb;}

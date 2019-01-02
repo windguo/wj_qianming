@@ -1,0 +1,110 @@
+<view>
+  <view bindtap="gifHidden" class="covers" hidden="{{hiddenss}}">
+    <image class="addGif" src='../../static/images/add.png' background-size="cover"></image>
+  </view>
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <swiper-item>
+      <view class="swiper_item" style="background:#FF1493;color:#ffff00;">
+        纯手写设计签名限时<span style="color:#ffffff;padding:0 10rpx">25</span>元一个
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="swiper_item" style="background:#FF00FF;color:#ffff00;">
+        <navigator target="miniProgram" open-type="navigate" app-id="wxb2e976cef0f6facb" path="" extra-data="" version="release">
+          设计三个风格，如需视频加10元。
+        </navigator>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="swiper_item" style="background:#6495ED;color:#ffff00;" bindtap="goDesign">
+      点击查看我们强筋有力的作品
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="swiper_item" style="background:#1E90FF;color:#ffff00;">艺术字生成收录了6{{total}}个字体</view>
+    </swiper-item>
+    <swiper-item>
+      <view class="swiper_item" style="background:#FF00FF;color:#ffff00;font-size:40rpx;">
+        <navigator target="miniProgram" open-type="navigate" app-id="wxb2e976cef0f6facb" path="" extra-data="" version="release">
+          找头像来 爱头像 ,可以浏览和设计头像哦
+        </navigator>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="swiper_item" style="background:#6495ED;color:#ffff00;font-size:50rpx;">
+        <navigator target="miniProgram" open-type="navigate" app-id="wxa12f1b4e608253f8" path="" extra-data="" version="release">
+          找网名来 爱网名 ，总有一款适合你
+        </navigator>
+      </view>
+    </swiper-item>
+  </swiper>
+  <scroll-view scroll-with-animation="true" scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+    <view wx:for="{{expertList}}" wx:for-index="idx" wx:for-item="item" class="tab-item {{currentTab==idx?'active':''}}"
+      data-current="{{idx}}" bindtap="swichNav">{{item.classname}}</view>
+  </scroll-view>
+  <ad class="ad1" unit-id="adunit-b7c12a23e9c8bfc6"></ad>
+  <swiper class="tab-content" current="{{currentTab}}" style="height:{{winHeight}}rpx" bindchange="swiperChange">
+    <swiper-item wx:for="{{expertListi}}" wx:for-index="i" wx:for-item="items">
+      <form class="formStyle" bindsubmit="formSubmit">
+        <view class="searchBox">
+          <view class="sname">
+            <input name="text" class="stext" maxlength="20" value="" placeholder="请输入您的姓名" placeholder-class="place-holder" />
+          </view>
+          <view class="selects">
+            <picker bindchange="bindPickerChange" value="{{objectArray[index].id}}" name="font" range-key="title" range="{{objectArray}}">
+              <view style="display: flex;">
+                <span class="h3Style">选择字体：</span>
+                <view class="picker">
+                  {{objectArray[index].title}}
+                </view>
+              </view>
+              <view wx:if='{{previewImage}}' class="previewImageStyle">
+                <image src='{{previewImage}}' style="width: 250px; height: 60px;" mode='center'></image>
+              </view>
+            </picker>
+          </view>
+          <view class="selectTextColor">
+            <span class="h3Style">文字颜色：</span>
+            <picker bindchange="bindPickerTextColorChange" value="{{textColorArrayIndex}}" name="fontColor" range-key="name"
+              range="{{textColorArray}}">
+              <view class="colorPicker" style="color:{{textColorArray[textColorArrayIndex].color}};padding:0 20rpx;">
+                {{textColorArray[textColorArrayIndex].name}}
+              </view>
+            </picker>
+          </view>
+          <view class="selectBackgroundColor">
+            <span class="h3Style">背景颜色：</span>
+            <picker bindchange="bindPickerBackgroundColorChange" value="{{backgroundColorArrayIndex}}" name="bgColor"
+              range-key="name" range="{{backgroundColorArray}}">
+              <view class="colorPicker" style="background:{{backgroundColorArray[backgroundColorArrayIndex].backgroundColor}};border-radius:10rpx;padding:0 20rpx;color:{{backgroundColorArray[backgroundColorArrayIndex].color}}">
+                {{backgroundColorArray[backgroundColorArrayIndex].name}}
+              </view>
+            </picker>
+          </view>
+          <view class="sectionSlide">
+            <span class="h3Style">文字字号：</span>
+            <slider class="sectionSlides" name="fontSize" block-size="20" block-color="#FFA500" value="30" bindchange="slider4change"
+              min="20" max="80" show-value />
+          </view>
+          <view class="sectionSlide">
+            <span class="h3Style">宽度：</span>
+            <slider class="sectionSlides" name="width" block-size="20" block-color="#FFA500" value="300" bindchange="slider4change"
+              min="30" max="400" show-value />
+          </view>
+          <view class="sectionSlide">
+            <span class="h3Style">高度：</span>
+            <slider class="sectionSlides" name="height" block-size="20" block-color="#FFA500" value="100" bindchange="slider4change"
+              min="30" max="200" show-value />
+          </view>
+        </view>
+        <input name="yishuziFrom" style="display:none" value="xiaochengxu" />
+        <input name="fontId" style="display:none" value="{{objectArray[index].id}}" />
+        <view class="buttonWrap">
+          <button class="sbutton" formType="submit"> 立即设计我的签名 </button>
+        </view>
+      </form>
+      <view style="font-size:32rpx;padding-bottom:30rpx;text-align:center;line-height:50rpx;">如果有特殊要求或者对本小程序使用中遇到了问题，请添加客服QQ或微信:275333(备注:手写签名设计)</view>
+    </swiper-item>
+  </swiper>
+</view>

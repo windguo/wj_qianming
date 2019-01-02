@@ -1,0 +1,10 @@
+<view class="alignCenter">
+  <ad class="ad1" unit-id="adunit-a9dfc88a03acf3dd"></ad>
+  <image class="radar" src='{{createdImg}}' mode='center'></image>
+  <!--<canvas class="sharsStyle" canvas-id='share'></canvas>-->
+  <view class="btns">
+    <button size='mini' bindtap="navigateBack" type="default">返回修改</button>
+    <button open-type="share" size='mini' type="warn" style="margin:0 20rpx;">分享给好友</button>
+    <button bindtap="saveImageToPhotosAlbum" type="primary" size='mini'>保存图片</button>
+  </view>
+</view>
