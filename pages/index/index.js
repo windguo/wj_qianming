@@ -54,6 +54,7 @@ Page({
         width: e.detail.value['width'],
         height: e.detail.value['height'],
         fontId: 50,
+				token:getApp().globalData.token,
         // returntype:'gif',
         // gifcolor:'#cc0000',
         alpha:100
@@ -129,7 +130,7 @@ Page({
     });
 
     wx.request({
-      url: 'https://www.yishuzi.com.cn/e/api/creat/get.php?getJson=countNum',
+			url: 'https://www.yishuzi.com.cn/e/api/creat/get.php?getJson=countNum&token=' + getApp().globalData.token,
       method: 'GET',
       dataType: 'json',
       success: (json) => {
@@ -142,7 +143,7 @@ Page({
     let _classid = [];
     let _expertListi = [];
     wx.request({
-      url: 'https://www.yishuzi.com.cn/e/api/creat/get.php?getJson=class',
+			url: 'https://www.yishuzi.com.cn/e/api/creat/get.php?getJson=class&token=' + getApp().globalData.token,
       method: 'GET',
       dataType: 'json',
       success: (json) => {
@@ -177,7 +178,7 @@ Page({
   },
   getListData: function (classid, _text) {
     wx.request({
-      url: 'https://www.yishuzi.com.cn/e/api/creat/get.php?getJson=list&classid=' + classid,
+			url: 'https://www.yishuzi.com.cn/e/api/creat/get.php?getJson=list&classid=' + classid + '&token=' + getApp().globalData.token,
       method: 'GET',
       dataType: 'json',
       success: (json) => {
@@ -186,7 +187,7 @@ Page({
           objectArray: json.data.result
         });
         this.setData({
-          previewImage: 'https://www.yishuzi.com.cn/e/api/creat/get.php?getJson=showPic&font=' + this.data.objectArray[0].id + '&text=' + _text +'&fontSize=28&width=250&height=60&fontColor=ff5d11'
+					previewImage: 'https://www.yishuzi.com.cn/e/api/creat/get.php?getJson=showPic&font=' + this.data.objectArray[0].id + '&text=' + _text + '&fontSize=28&width=250&height=60&fontColor=ff5d11&token=' + getApp().globalData.token
         });
         wx.hideLoading();
       }

@@ -8,7 +8,7 @@ Page({
             title: '手写签名设计'
         });
         wx.request({
-            url: 'https://www.yishuzi.com.cn/e/api/creat/get.php?getJson=designList',
+					url: 'https://www.yishuzi.com.cn/e/api/creat/get.php?getJson=designList&token=' + getApp().globalData.token,
             method: 'GET',
             dataType: 'json',
             success: (json) => {
